@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>index!!</h1>
+<a th:href="@{/target}">访问目标页面target.html</a></br>
+<a th:href="@{/testRequestMapping}">测试RequestMapping注解的value属性-->testRequestMapping</a></br>
+<a th:href="@{/test}">测试RequestMapping注解的value属性-->test</a></br>
+<a th:href="@{/test}">测试RequestMapping注解的method属性-->GET</a></br>
+<form th:action="@{/test}" method="post">
+    <input type="submit" value="测试RequestMapping注解的method属性-->POST">
+</form>
+<a th:href="@{/testpath/1001/lee}">测试路径中的占位符-->/testRest</a></br>
+
+</body>
+</html>
